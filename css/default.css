@@ -57,7 +57,7 @@ nav .conteudo-menu{
     opacity: 0;
     width: 90%;
     display: block;
-    position: absolute;
+    position: inherit;
     top: 60px;    
     left:0;
     right:0;
@@ -121,12 +121,7 @@ header .primeira-pag .texto h1{
     margin: 0;
     color: #FFF;
 }
-.primeira-pag i{
-    color: #FFF;
-}
-.primeira-pag i.primeira{
-    font-size:3rem;
-}
+
 .primeira-pag .retangulo{
     background-color: var(--cor-destaque-um);
     width: 2000px;
@@ -278,30 +273,32 @@ section .box h4{
     font-family: 'Work Sans', sans-serif;
 }
 
-.feature-one{
-    height: 900px;
-    width: 100%;
+.feature-one div.flex-box{
     background-image: linear-gradient(90deg, var(--cor-principal-um), var(--cor-principal-dois));
 }
-.feature-one div.flex-box{
+.feature-one div.flex-box, section .flex-box{
     margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
 }
 div.flex-box div{
     color: #FFF;
-    margin: 10px 0px 10px 0px;
-    padding: 20px;
+    width: 350px;
+    margin-bottom: 15%;
+    letter-spacing: 1.5px;
 }
 div.flex-box div h4{
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 500;
 }
 div.flex-box div p{
-    font-weight: 300;
+    font-weight: 400;
 }
-div.flex-box div span{
+div.flex-box div .btn{
     width: 150px;
     height: 40px;
     line-height: 40px;
@@ -311,4 +308,31 @@ div.flex-box div span{
     font-weight: 600;
     border: 1px solid #FFF;
     cursor: pointer;
+}
+
+section .flex-box .level-description{
+    color: #000;
+}
+section .flex-box .level-description .level-bar{
+    display: block;
+    margin: 5% auto;
+    width: 90%;
+    height: 30px;
+    background-color: #CCC;
+}
+section .flex-box .level-description .level-bar span{
+    display: block;
+    position: inherit;
+    height: 30px;
+    background-color: var(--cor-destaque-dois);
+    color: #FFF;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0.8rem;
+}
+span.html{
+    width: 95%;
+}
+span.css{
+    width: 90%;
 }
