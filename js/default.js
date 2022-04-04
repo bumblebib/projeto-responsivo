@@ -4,7 +4,7 @@ $( document ).ready(function() {
     })
 
     $(window).scroll(function(){
-        if($(document).scrollTop() > 50)
+        if($(document).scrollTop() > 300)
       {
           $('nav').addClass("ativo");
       }
