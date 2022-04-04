@@ -319,9 +319,11 @@ section .flex-box .level-description .level-bar{
     width: 90%;
     height: 30px;
     background-color: #CCC;
+    border-radius: 5px;
 }
 section .flex-box .level-description .level-bar span{
     display: block;
+    border-radius: 5px;
     position: inherit;
     height: 30px;
     background-color: var(--cor-destaque-dois);
